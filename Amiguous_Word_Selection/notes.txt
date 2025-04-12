@@ -1,0 +1,10 @@
+# data file creation way
+- Got the filtered_sinhala_words.txt file which contains the bert && wsd dictionary, and filtered it using madhura and get "Filtered_Sinhala_Dictionary.txt"
+- Got the modified_lemma.txt file which contains Sinhala words and its lemma using verified_word_list_lemma_analysis.txt
+- Got the all_unique_words_in_verified_lemma file by using the words (not lemmas) from verified_word_list_lemma_analysis.txt file
+- Since some madura api failed for several words, those were manually checked whether is there any spelling mistakes -> manually_checked_madura_filtered.txt
+- That output file was filtered again with the words in all_unique_words_in_verified_lemma.file -> dictionary_all_unique_verified_filtered.txt
+- Created the lemmatized_final_dictionary.txt file by filtering the dictionary_all_unique_verified_filtered.txt with modified_lemma.txt
+- single element Sinhala lists were removed in lemmatized_final_dictionary.txt -> manually_checked_lemmatized_final_dictionary.txt (I dont remember why I used the "manually")
+- expand the variations of tuples in manually_checked_lemmatized_final_dictionary.txt -> manually_checked_lemmatized_final_dictionary2.txt
+- created the dictionary_2 and dictionary_3 by deviding the manually_checked_lemmatized_final_dictionary2.txt into dictionaries which has 2 Sinhala words ad 3.
